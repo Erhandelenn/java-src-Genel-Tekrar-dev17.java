@@ -8,14 +8,13 @@ class Student {
     private String soyisim;
     private int yas;
     private String okulNo;
-    private double notOrtalamasi;
 
-    public Student(String isim, String soyisim, int yas, String okulNo, double notOrtalamasi) {
+
+    public Student(String isim, String soyisim, int yas, String okulNo) {
         this.isim = isim;
         this.soyisim = soyisim;
         this.yas = yas;
         this.okulNo = okulNo;
-        this.notOrtalamasi = notOrtalamasi;
     }
 
     public String getIsim() {
@@ -34,9 +33,6 @@ class Student {
         return okulNo;
     }
 
-    public double getNotOrtalamasi() {
-        return notOrtalamasi;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -54,6 +50,6 @@ class Student {
     @Override
     public String toString() {
         return "Student{" + "isim='" + isim + '\'' + ", soyisim='" + soyisim + '\'' + ", yas=" + yas +
-                ", okulNo='" + okulNo + '\'' + ", notOrtalamasi=" + notOrtalamasi + '}';
+                ", okulNo='" + okulNo + '\'' + '}';
     }
 }
